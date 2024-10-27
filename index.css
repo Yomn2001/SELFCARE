@@ -1,0 +1,84 @@
+/* Basic page setup */
+body {
+    font-family: 'Allura', cursive, sans-serif;
+    background: url('https://images.unsplash.com/photo-1539035179027-2724f876ba7d') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Grid layout for squares */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Space between squares */
+    margin-bottom: 30px; /* Space between grid and quote */
+}
+
+/* Styling for squares */
+.square {
+    background-color: #b39ddb; /* Pastel purple background */
+    color: #333;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.square:hover {
+    background-color: #9575cd; /* Darker pastel purple on hover */
+}
+
+/* Styling for the quote section */
+.quote {
+    background-color: #ffccbc; /* Light coral background for quote section */
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.quote-text {
+    font-size: 24px;
+    margin: 0;
+}
+
+.quote-subtext {
+    font-size: 18px;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Additional styles for category pages (optional) */
+.category-title {
+    font-size: 32px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.category-content {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}

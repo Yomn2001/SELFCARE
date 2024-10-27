@@ -1,0 +1,71 @@
+/* Importing Allura font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sans-Serif', Arial, sans-serif;
+    background: linear-gradient(120deg, rgba(224, 176, 255, 0.8), rgba(187, 222, 251, 0.8));
+    background-size: 200% 200%;
+    animation: marbleEffect 8s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    border: 2px solid rgba(224, 176, 255, 0.3);
+}
+
+h1 {
+    font-family: 'Allura', cursive; /* Using Allura font for the title */
+    color: #6a1b9a;
+    font-size: 36px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6a1b9a;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Sans-Serif', Arial, sans-serif;
+}
+
+button {
+    padding: 10px;
+    background-color: #9575cd; /* Purple button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 120px;
+}
+
+button:hover {
+    background-color: #6a1b9a; /* Darker purple on hover */
+}
+
+.output h3 {
+    margin: 10px 0;
+    color: #6a1b9a;
+}

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Reminder with Location</title>
+    <link rel="stylesheet" href="prayer.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prayer Reminder</h1>
+        <form id="locationForm">
+            <label for="city">Enter Your City:</label>
+            <input type="text" id="city" required>
+            <button type="button" onclick="fetchPrayerTimes()">Get Prayer Times</button>
+        </form>
+
+        <h2>Today's Prayer Times</h2>
+        <ul id="prayerList"></ul>
+        
+        <div id="reminderMessage"></div>
+    </div>
+
+    <script src="prayer.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="journaling.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> | <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Daily Journal</h1>
+        <textarea id="journalEntry" rows="10" placeholder="Write your journal entry here..."></textarea>
+        <button onclick="saveJournal()">Save Entry</button>
+        <button onclick="clearJournal()">Clear Entry</button>
+
+        <h2>Previous Entries</h2>
+        <div id="journalHistory"></div>
+    </div>
+
+    <script src="journaling.js"></script>
+</body>
+</html>

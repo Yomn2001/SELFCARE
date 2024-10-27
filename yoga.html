@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Exercise</title>
+    <link rel="stylesheet" href="yoga.css">
+</head>
+<body>
+    <header>
+        <h1>Yoga Exercise Routine</h1>
+    </header>
+    
+    <main class="container">
+        <div id="pose-container">
+            <h2 id="pose-name">Mountain Pose</h2>
+            <img id="pose-image" src="mountain_pose.jpg" alt="Mountain Pose">
+            <p id="pose-description">Stand with feet together, arms at sides, and weight evenly distributed.</p>
+            <div id="timer">Hold for: <span id="time-remaining">30</span> seconds</div>
+            <button onclick="startExercise()">Start Exercise</button>
+            <button onclick="nextPose()">Next Pose</button>
+        </div>
+    </main>
+    
+    <script src="yoga.js"></script>
+</body>
+</html>

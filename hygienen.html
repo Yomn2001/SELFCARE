@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hygiene Reminders</title>
+    <link rel="stylesheet" href="hygienen.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hygiene Reminders</h1>
+        
+        <div class="reminder-form">
+            <label for="task">Select Task:</label>
+            <select id="task">
+    <option value="Brush Teeth">Brush Teeth</option>
+    <option value="Wash Hands">Wash Hands</option>
+    <option value="Shower">Shower</option>
+    <option value="Floss">Floss</option>
+    <option value="Skincare">Skincare</option>
+    <option value="Trim Nails">Trim Nails</option>
+    <option value="Change Clothes">Change Clothes</option>
+    <option value="Apply Deodorant">Apply Deodorant</option>
+    <option value="Clean Phone">Clean Phone</option>
+    <option value="Brush Hair">Brush Hair</option>
+    <option value="Drink Water">Drink Water</option>
+    <option value="Use Mouthwash">Use Mouthwash</option>
+    <option value="Hand Sanitizer">Use Hand Sanitizer</option>
+    <option value="Exfoliate Skin">Exfoliate Skin</option>
+    <option value="Moisturize">Apply Moisturizer</option>
+    <option value="Apply Sunscreen">Apply Sunscreen</option>
+    <option value="Take Vitamins">Take Vitamins</option>
+    <option value="Change Bed Sheets">Change Bed Sheets</option>
+    <option value="Clean Ears">Clean Ears</option>
+</select>
+
+            
+            <label for="time">Set Time:</label>
+            <input type="time" id="time">
+
+            <button onclick="addReminder()">Add Reminder</button>
+        </div>
+
+        <h2>Today's Reminders</h2>
+        <ul id="remindersList"></ul>
+
+        <div id="notification"></div>
+    </div>
+
+    <script src="hygienen.js"></script>
+</body>
+</html>

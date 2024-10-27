@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Test</title>
+    <link rel="stylesheet" href="Stressleveltest.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Stress Level Test</h1>
+        <p>Answer the following questions to assess your current stress level.</p>
+
+        <form id="stressTestForm">
+            <div class="question">
+                <p>1. How often do you feel overwhelmed?</p>
+                <input type="radio" name="q1" value="1"> Rarely<br>
+                <input type="radio" name="q1" value="2"> Sometimes<br>
+                <input type="radio" name="q1" value="3"> Often<br>
+                <input type="radio" name="q1" value="4"> Always
+            </div>
+
+            <div class="question">
+                <p>2. How often do you feel irritable or angry?</p>
+                <input type="radio" name="q2" value="1"> Rarely<br>
+                <input type="radio" name="q2" value="2"> Sometimes<br>
+                <input type="radio" name="q2" value="3"> Often<br>
+                <input type="radio" name="q2" value="4"> Always
+            </div>
+
+            <div class="question">
+                <p>3. How often do you have trouble sleeping?</p>
+                <input type="radio" name="q3" value="1"> Rarely<br>
+                <input type="radio" name="q3" value="2"> Sometimes<br>
+                <input type="radio" name="q3" value="3"> Often<br>
+                <input type="radio" name="q3" value="4"> Always
+            </div>
+
+            <div class="question">
+                <p>4. How often do you feel anxious or worried?</p>
+                <input type="radio" name="q4" value="1"> Rarely<br>
+                <input type="radio" name="q4" value="2"> Sometimes<br>
+                <input type="radio" name="q4" value="3"> Often<br>
+                <input type="radio" name="q4" value="4"> Always
+            </div>
+
+            <div class="question">
+                <p>5. How often do you feel fatigued or exhausted?</p>
+                <input type="radio" name="q5" value="1"> Rarely<br>
+                <input type="radio" name="q5" value="2"> Sometimes<br>
+                <input type="radio" name="q5" value="3"> Often<br>
+                <input type="radio" name="q5" value="4"> Always
+            </div>
+
+            <button type="button" onclick="calculateStress()">Submit</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="Stressleveltest.js"></script>
+</body>
+</html>

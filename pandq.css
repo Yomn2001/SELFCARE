@@ -1,0 +1,44 @@
+/* Basic page setup */
+body {
+    font-family: 'Allura', cursive, sans-serif;
+    background: url('https://images.unsplash.com/photo-1539035179027-2724f876ba7d') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Style for the rounded category boxes */
+.category-box {
+    font-size: 28px;
+    color: #333;
+    background-color: #b39ddb; /* Pastel purple background */
+    padding: 20px;
+    border-radius: 25px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-family: 'Allura', cursive;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.category-box:hover {
+    background-color: #9575cd; /* Darker pastel purple on hover */
+}

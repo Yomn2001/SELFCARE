@@ -1,0 +1,77 @@
+/* Importing Google Font - Allura */
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+body {
+    font-family: 'Allura', cursive, sans-serif; /* Primary font is Allura, with fallback to sans-serif */
+    background-color: #CCCCFF; /* Periwinkle background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    font-family: 'Allura', cursive; /* Allura for headings */
+    color: #9575cd;
+    font-size: 36px;
+}
+
+label {
+    font-family: sans-serif; /* Sans-serif for labels */
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: sans-serif; /* Sans-serif for inputs */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #b39ddb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: sans-serif; /* Sans-serif for buttons */
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #9575cd;
+}
+
+#result-section {
+    margin-top: 20px;
+    display: none;
+}
+
+h2 {
+    font-family: 'Allura', cursive; /* Allura for result heading */
+    color: #42a5f5;
+}
+
+#diet-plan {
+    font-family: sans-serif; /* Sans-serif for diet plan text */
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}

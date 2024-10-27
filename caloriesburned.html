@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Burned Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="caloriesburned.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calories Burned Calculator</h1>
+        <div class="input-section">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight">
+
+            <label for="activityType">Activity Type:</label>
+            <select id="activityType" onchange="toggleActivityInput()">
+                <option value="predefined">Predefined Activity</option>
+                <option value="custom">Custom Activity</option>
+            </select>
+
+            <!-- Predefined Activity selection -->
+            <div id="predefinedSection">
+                <label for="predefinedActivity">Select Activity:</label>
+                <select id="predefinedActivity">
+                    <option value="8">Running (8 MET)</option>
+                    <option value="6">Cycling (6 MET)</option>
+                    <option value="7">Swimming (7 MET)</option>
+                    <option value="3.5">Walking (3.5 MET)</option>
+                    <option value="5">Yoga (5 MET)</option>
+                    <option value="4.5">Dancing (4.5 MET)</option>
+                    <option value="9">Jumping Rope (9 MET)</option>
+                    <option value="6.3">Hiking (6.3 MET)</option>
+                    <option value="2.3">Stretching (2.3 MET)</option>
+                    <option value="7.5">Tennis (7.5 MET)</option>
+                    <option value="5.5">Weightlifting (5.5 MET)</option>
+                    <option value="7">Basketball (7 MET)</option>
+                    <option value="8.3">Soccer (8.3 MET)</option>
+                </select>
+            </div>
+
+            <!-- Custom Activity input -->
+            <div id="customSection" style="display: none;">
+                <label for="customActivityName">Activity Name:</label>
+                <input type="text" id="customActivityName" placeholder="Enter custom activity name">
+
+                <label for="customMet">MET Value:</label>
+                <input type="number" id="customMet" placeholder="Enter MET value">
+            </div>
+
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" placeholder="Enter duration in minutes">
+
+            <button id="calculateBtn">Calculate Calories Burned</button>
+        </div>
+
+        <div id="result-section">
+            <h2>Total Calories Burned: <span id="caloriesResult"></span></h2>
+            <h3>Activity: <span id="activityName"></span></h3>
+            <button id="restartBtn">Restart</button>
+        </div>
+    </div>
+
+    <script src="caloriesburned.js"></script>
+</body>
+</html>

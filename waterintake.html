@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Intake Tracker</title>
+    <link rel="stylesheet" href="waterintake.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Water Intake Tracker</h1>
+        <div class="goal-section">
+            <label for="dailyGoalInput">Set Daily Goal (in ml):</label>
+            <input type="number" id="dailyGoalInput" placeholder="Enter goal in ml" required />
+            <button id="setGoal">Set Goal</button>
+        </div>
+
+        <div class="input-section">
+            <label for="waterAmount">Amount of Water (in ml):</label>
+            <input type="number" id="waterAmount" placeholder="Enter amount in ml" required />
+            <button id="addWater">Add Water</button>
+            <button id="resetTracker">Reset Tracker</button>
+        </div>
+
+        <div class="output">
+            <h3>Total Water Intake: <span id="totalIntake">0</span> ml</h3>
+            <h3>Daily Goal: <span id="dailyGoal">0</span> ml</h3>
+            <h3>Remaining: <span id="remainingIntake">0</span> ml</h3>
+            <h3>Recommended Intake: <span id="recommendedCups">0</span> cups</h3>
+        </div>
+    </div>
+
+    <script src="waterintake.js"></script>
+</body>
+</html>

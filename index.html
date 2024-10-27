@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Care App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Self Care App</h1>
+
+        <!-- Grid for the 6 squares -->
+        <div class="grid">
+            <div class="square" onclick="navigateTo('Nutrition')">Nutrition</div>
+            <div class="square" onclick="navigateTo('Physical')">Physical</div>
+            <div class="square" onclick="navigateTo('Mental')">Mental</div>
+            <div class="square" onclick="navigateTo('DailyCare')">Daily Care</div>
+            <div class="square" onclick="navigateTo('DailyQuest')">Daily Quest</div>
+            <div class="square" onclick="navigateTo('Wellness')">Podcasts and Quotes</div>
+        </div>
+
+        <!-- Rectangle for the daily quote -->
+        <div class="quote" onclick="navigateTo('DailyQuotePodcast')">
+            <p class="quote-text">"Quote of the Day"</p>
+            <p class="quote-subtext">Tap to hear today's podcast</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
